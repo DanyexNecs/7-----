@@ -1,0 +1,341 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+/* Модальное окно */
+
+.modal:before{
+    content:"";
+    display:none;
+    background:rgba(0,0,0,0.7);
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index:10;
+
+}
+.modal:target:before{
+    display:block;
+}
+.modal_dialog{
+    background:none;
+    /* border:white solid 2px; */
+    /* border-radius:60px; */
+    margin-left:0;
+    position:fixed;
+    left:27%;
+    top:-100%;
+    z-index:11;
+    width:710px;
+    transform:translate(0,-500%);
+    transition:transform .3s ease-in;
+    overflow-y: auto !important;
+}
+.modal:target .modal_dialog{
+    transform:translate(0,0);
+    top:10%; /*положение окна после вызова*/
+}
+.modal_body{
+    border-radius: 60px;
+    height: 85vh;
+    overflow-y: auto;
+    /* margin-top: -100px; */
+}
+
+
+.modal_body::-webkit-scrollbar {
+    width: 0; /*убирает полосу прокрутки*/
+  }
+
+.btn_close{
+    border: none;
+    text-decoration:none;
+    position:fixed;
+    right: 30px;
+    top:30px;
+    z-index: 99;
+}
+/* .btn_close:hover{
+    
+} */
+#close:target{
+    display:none;
+}
+
+
+
+/* Общие стили для форм */
+.modal{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    background-color: #FF9200;
+    /* box-shadow: 0px 0px 67px 4px #000; */
+    border-radius: 60px;
+    width: 710px;
+}
+
+.modal_content{
+    max-width: 466px;
+    flex-direction: column;
+    margin: 50px 0 0 0;
+}
+
+.modal_content h5{
+    font-family: "StolzlMedium";
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.modal_content p{
+    font-size: 24px;
+    color: black;
+    margin-bottom: 15px;
+}
+
+
+.modal_content input,
+.modal_content select{
+    margin-bottom: 40px;
+}
+
+/* Текст обычный (Имя, Фамилия) */
+input[type="text"] {
+    border: 4px solid black; 
+    background-color: #FFDCAC;
+    border-radius: 20px; 
+    padding: 18px 0 18px 15px;
+    height: 59px; 
+    width: 466px; 
+    color: black;
+    font-size: 18px; 
+    font-family: "StolzlBook";
+}
+
+
+/* Телефон */
+input[type="phone"]
+{
+    border: 4px solid black; 
+    background-color: #FFDCAC;
+    border-radius: 20px; 
+    padding: 18px 0 18px 15px;
+    height: 59px; 
+    width: 466px; 
+    color: black;
+    font-size: 18px; 
+    font-family: "StolzlBook";
+}
+
+/* Дата и время */
+input[type="date"]{
+    border: 4px solid black; 
+    background-color: #FFDCAC;
+    border-radius: 20px; 
+    padding: 18px 0 18px 15px;
+    height: 59px; 
+    width: 150px; 
+    font-size: 18px;
+    font-family: "StolzlBook";
+   
+}
+input[type="time"]{
+    justify-content: center;
+    border: 4px solid black; 
+    background-color: #FFDCAC;
+    border-radius: 20px; 
+    padding: 18px 0 18px 25px;  
+    height: 59px; 
+    width: 120px; 
+    font-size: 18px;
+    font-family: "StolzlBook";
+}
+
+/* Почта */
+input[type="email"]{
+    border: 4px solid black; 
+    background-color: #FFDCAC;
+    border-radius: 20px; 
+    padding: 18px 0 18px 15px;
+    height: 59px; 
+    width: 466px; 
+    color: black;
+    font-size: 18px; 
+    font-family: "StolzlBook";
+}
+
+/* Пароль*/
+input[type="password"]{
+    border: 4px solid black; 
+    background-color: #FFDCAC;
+    border-radius: 20px; 
+    padding: 18px 0 18px 15px;
+    height: 59px; 
+    width: 466px; 
+    color: black;
+    font-size: 18px; 
+    font-family: "StolzlBook";
+}
+
+/* Количество гостей */
+.modal_content select{
+    position: relative;
+    width: 100px;
+    height: 60px;
+    border-radius: 20px;
+    border: 4px solid black; 
+    text-transform: capitalize;
+    color: black;
+    background-color: #FFDCAC;
+    text-align: left;
+    padding: 0 20px;
+    font-size: 16px;
+    cursor: pointer;
+
+    font-family: "StolzlBook";
+    font-size: 18px;
+    appearance: none; /*убирает стрелочку*/
+    background-image: url("../img/svg/arrow_down.svg");
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: calc(100% - 15px) center;
+}
+
+
+/* Для пометок со *обязательно */
+form span{
+    font-family: "StolzlBook";
+    font-size: 16px;
+}
+
+
+.comments{
+    margin: 0;
+    width: 466px;
+    /* max-height: 190px; 
+    min-height: 190px; */
+    /* height: 190px; */
+    /* resize: none; /*Убирает уголок у формы*/ 
+    border: 4px solid black; 
+    background-color: #FFDCAC;
+    border-radius: 20px;  
+    padding: 18px 18px 18px 15px;
+    font-family: "StolzlBook";
+    font-size: 18px; 
+    margin-bottom: 40px;
+}
+
+/* Для обязательных полей */
+input:required{
+    
+ }
+
+
+/* Собственный дизайн чекбокса */
+.checkbox{
+    position: relative;
+}
+.checkbox_label{
+    padding-left: 25px;
+    display: block;
+    font-family: "StolzlBook";
+    font-size: 18px;
+}
+
+.checkbox_label:before{
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid black; 
+    border-radius: 5px;
+    background-color: #FFDCAC ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+
+.checkbox_input:checked + .checkbox_label:before{
+    background-color: black;
+}
+
+.checkbox_input{
+    margin: 0px;
+    position: absolute;
+    appearance: none;
+}
+
+.modal_content a{
+    max-width: 320px;
+}
+.btn1{
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    font-family: 'StolzlRegular';
+    background-color: black;
+    color: white;
+    font-size: 32px;
+    padding: 27px 60px;
+    border-radius: 40px;
+    outline: 0;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    margin-top: 40px;
+}
+
+.btn1:hover, .btn1:active{
+    /* opacity: 75%; */
+    color: black;
+    background: #FFDCAC; 
+}
+
+#disagree{
+    margin-left: 30px;
+}
+
+#beat{
+    height: 50px;
+    font-size: 20px;
+}
+
+/* Валидация формы */
+input.valid {
+    border-color:green;
+    
+}
+input.invalid {
+    color: red;
+    border-color: red;
+}
+
+p.warning{ /*До ввод значений в поля*/
+    font-size: 16px;
+    font-family: "StolzlBook";
+    color: red;
+    text-align: center;
+    margin-top: -40px;
+    margin-bottom: 40px;
+    opacity: 0;
+    height: 0;
+}
+
+input.invalid + p.warning{ /*если ввод неверный*/
+   
+    opacity: 1;
+    height: auto;
+    margin-bottom: 40px;
+}
+
+input.valid + p.warning{ /*если ввод верный*/
+    opacity: 0;
+    height: 0;
+}
+

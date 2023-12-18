@@ -1,0 +1,705 @@
+/* ШРИФТ */
+/* Stolzl Bold */
+@font-face { 
+    font-family: "StolzlBold";
+    src: url("../fonts/StolzlBold.ttf");
+    src: url("../fonts/StolzlBold.ttf?#iefix")format("embedded-opentype");
+    /* url("../fonts/StolzlBold.woff") format("woff"),
+    url("../fonts/StolzlBold.ttf") format("truetype"); */
+    font-style: normal;
+    font-weight: 700;
+}
+
+/* Stolzl Medium */
+@font-face { 
+    font-family: "StolzlMedium";
+    src: url("../fonts/StolzlMedium.ttf");
+    src: url("../fonts/StolzlMedium.ttf?#iefix")format("embedded-opentype");
+    /* url("../fonts/StolzlMedium.woff") format("woff"),
+    url("../fonts/StolzlMedium.ttf") format("truetype"); */
+    font-style: medium;
+    font-weight: 500;
+}
+
+/* Stolzl Regular */
+@font-face { 
+    font-family: "StolzlRegular";
+    src: url("../fonts/StolzlRegular.ttf");
+    src: url("../fonts/StolzlRegular.ttf?#iefix")format("embedded-opentype");
+    /* url("../fonts/StolzlRegular.woff") format("woff"),
+    url("../fonts/StolzlRegular.ttf") format("truetype"); */
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* Stolzl Book */
+@font-face { 
+    font-family: "StolzlBook";
+    src: url("../fonts/StolzlBook.ttf");
+    src: url("../fonts/StolzlBook.ttf?#iefix")format("embedded-opentype");
+    /* url("../fonts/StolzlBook.woff") format("woff"),
+    url("../fonts/StolzlBook.ttf") format("truetype"); */
+    font-style: book;
+    font-weight: normal;
+}
+
+/* Stolzl Light */
+@font-face { 
+    font-family: "StolzlLight";
+    src: url("../fonts/StolzlLight.ttf");
+    src: url("../fonts/StolzlLight.ttf?#iefix")format("embedded-opentype");
+    /* url("../fonts/StolzlLight.woff") format("woff"),
+    url("../fonts/StolzlLight.ttf") format("truetype"); */
+    font-style: light;
+    font-weight: 300;
+}
+
+body{
+
+    background: linear-gradient(99deg, #FF9200 16.77%, rgba(255, 181, 82, 0.90) 98.92%);
+    font-family: "StolzlRegular";
+    font-style: normal;
+    font-size: 24px;
+    line-height: normal;
+    font-weight: 400; 
+
+}
+
+
+
+html{
+    box-sizing: border-box;
+}
+    *, *::before, *::after{
+        box-sizing: inherit;
+    }
+
+.wrapper{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+
+.header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+}
+
+
+.header_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+.header_list{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.header_item{
+    margin-right: 42px;
+    margin-bottom: 38px;
+}
+.header_item:last-child{
+    margin-right: 0px;
+}
+
+.header_link{
+    font-size: 24px;
+    line-height: normal;
+    color:#000;
+    text-decoration: none ;
+   
+
+}
+
+.header_link:hover,  .header_link:active{
+    opacity: 75%;
+    color: white;
+}
+/* фон гифка */
+#back1,#back2,#back3{
+    position: absolute;
+}
+
+#back1{
+    display: flex;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url(../img/back.gif) no-repeat center;
+    height: 920px;
+    
+    background-size: cover;
+
+    mix-blend-mode: color-dodge;
+    opacity: 0.20;
+}
+
+
+
+#back3{
+    /* width: 1680px; */
+    
+    background: linear-gradient(99deg, #FF9200 16.77%, rgba(255, 181, 82, 0.90) 98.92%);
+    background-size: cover;
+}
+
+/* Главный блок */
+.h1_wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 75px;
+    
+}
+
+.h1_wrapper h1{
+    font-family: 'StolzlMedium';
+    font-size:60px;
+    text-align: center;
+    line-height: 2;
+    margin-bottom: 21px;
+}
+
+.h1_wrapper p{
+    font-family: 'StolzlRegular';
+    font-size:28px;
+}
+/* кнопка */
+.btn{
+    font-family: 'StolzlRegular';
+    background-color: black;
+    color: white;
+    font-size: 32px;
+    padding: 27px 60px;
+    margin-top: 120px;
+    border-radius: 40px;
+    outline: 0;
+}
+.btn:hover, .btn:active{
+    /* opacity: 75%; */
+    color: black;
+    background: #FFDCAC; 
+}
+.note{
+    position: relative;
+    background-color: #FFDCAC;
+    padding: 12px 26px;
+    border-radius: 40px;
+    margin-left: 53px;
+}
+
+.slice{
+    position: absolute;
+    top: -30px;
+    left:135px;
+}
+.wave{
+    margin: 0 53px;
+}
+
+.magic{
+    margin: 0 40px 0 40px;
+}
+
+
+.main{
+
+}
+
+/* 1-й блок */
+.wrapper_alt{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.wrapper_alt h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 345px 0 0 0 ;
+    text-align: center;
+    font-family: 'StolzlMedium';
+    font-size: 60px;
+    word-spacing: 0px;
+}
+.wrapper_alt span{
+    margin-left: 20px;
+}
+
+.h2_rect{
+    position: relative;
+    background-color: #FFBF68;
+    padding: 12px 10px 16px 10px;
+    border-radius: 60px;
+}
+
+.block_one{
+    justify-content: center;
+    /* align-items: center; */
+    display: flex;  
+    margin: 100px 0 0;
+}
+
+.img_one{
+    margin: 0 0px 0 310px;
+    /* height: 512px; */
+}
+
+.info_one {
+    flex-direction: column;
+    font-family: 'StolzlBook';
+    font-size: 24px;
+    margin: 60px 350px 0 125px;
+}
+
+.icon_one{
+    display: inline-flex;
+    margin: 0 0px 97px 0;
+}
+.icon_one p{
+    margin-left: 30px;
+    padding: 0 -50px 0 0;
+}
+
+.icon_two{
+    display: inline-flex;
+    margin: 0 0 97px 20px;
+    
+}
+.icon_two p{
+    display: inline-flex;   
+    margin: 0 0 0 50px;
+}
+
+.icon_three{
+    display: inline-flex;
+    min-width: 102px;  
+    margin: 0 0 0 20px;
+}
+
+.icon_three p{
+    min-width: 250px;
+    margin: 0 0 0 40px;
+}
+
+
+/* 2-й блок */
+h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 345px 0 0 0;
+    gap: 10px;
+    text-align: center;
+    font-family: 'StolzlMedium';
+    font-size: 60px;
+    
+}
+
+.h3_rect{
+    position: relative;
+    background-color: #FFBF68;
+    padding: 12px 10px 16px 10px;
+    border-radius: 60px;
+}
+
+/* 2-й блок - слайдер*/
+.slide_back{
+
+
+}
+
+.all{
+    background: #FF9200;
+    box-shadow: inset 0 0 74px 20px rgba(0,0,0,0.7);
+    height: 750px;    
+    margin: 120px 2px 100px 0;
+    border-radius: 100px;
+
+}
+#slider { /*положение слайдера*/
+	text-align: center;
+    top: 10px;
+}
+
+#slider{ /*центровка слайдера*/
+	margin: 0 auto;
+}
+
+#slides{
+    padding: 70px 119px 0px 0px;
+}
+
+#slides article{ /*все изображения справа друг от доруга*/
+    display: flex;
+    justify-content: left;
+    margin: 0 0 0px 83px;
+	width: 1310px;
+	float: left;
+}
+
+#slides .image{ /*устанавливает общий размер блока с изображениями*/
+	width: 500%;
+	/* line-height: 0; */
+    width: 7000px;
+    /* height: 700px; */
+}
+
+#slide1 {
+    flex-direction: column;
+
+    align-items: left;
+    margin: 30px 0 0 0 ;
+}
+#slide1 h4{
+    padding-left: 135px;
+    text-align: left;
+    font-family: 'StolzlRegular';
+    font-size: 50px;
+    word-spacing: 0px;
+}
+#slide1 p{
+    text-align: left;
+    padding: 50px 120px 0px 135px;
+    font-family: 'StolzlBook';
+    font-size: 24px;
+    word-spacing: 0px;
+}
+
+#slide1 span{
+    text-align: left;
+    font-family: 'StolzlRegular';
+    font-size: 24px;
+    word-spacing: 0px;
+}
+
+#overflow{ /*сркывает все, что находится за пределами этого блока*/
+	width: 1395px;
+    height: 630px;
+	overflow: hidden;
+}
+
+.article img{ /*размер изображений слайдера*/
+	width: 100%;
+    width: 495px;
+    height: 530px;
+}
+
+#desktop:checked ~ #slider{ /*размер всего слайдера*/
+	max-width: 1155px; /*максимальнная длинна*/
+}
+
+/*настройка переключения и положения для левой стрелки*/
+/*если свич1-5 активны, то идет обращение к лейблу из блока с id контролс*/
+#switch1:checked ~ #controls label:nth-child(4), 
+#switch2:checked ~ #controls label:nth-child(1),
+#switch3:checked ~ #controls label:nth-child(2),
+#switch4:checked ~ #controls label:nth-child(3){
+    background: url('../img/slider/chevron-left.svg') no-repeat; /*заливка фона картинкой без повторений*/
+
+	float: left;
+	margin: 0px 0 0px 20px; /*сдвиг влево*/
+	display: block;
+	height: 60px;
+	width: 60px;
+}
+
+/*настройка переключения и положения для правой стрелки*/
+#switch1:checked ~ #controls label:nth-child(2), 
+#switch2:checked ~ #controls label:nth-child(3),
+#switch3:checked ~ #controls label:nth-child(4),
+#switch4:checked ~ #controls label:nth-child(1){
+	background: url('../img/slider/chevron-right.svg') no-repeat; /*заливка фона картинкой без повторений*/
+	float: right;
+	margin: 0px 20px 0 0; /*сдвиг вправо*/
+	display: block;
+	height: 68px;
+	width: 68px;
+}
+
+label, a{ /*при наведении на стрелки или переключатели - курсор изменится*/
+	cursor: pointer;
+}
+
+.all input{ /*скрывает стандартные инпуты (чекбоксы) на странице*/
+	display: none;
+}
+
+/*позиция изображения при активации переключателя*/
+#switch1:checked ~ #slides .image{
+	margin-left: 0;
+}
+
+#switch2:checked ~ #slides .image{
+	margin-left: -100%;
+}
+
+#switch3:checked ~ #slides .image{
+	margin-left: -200%;
+}
+
+#switch4:checked ~ #slides .image{
+	margin-left: -300%;
+}
+
+#controls{ /*положение блока всех управляющих элементов*/
+	margin: -25% 0 0 0;
+	width: 100%;
+	height: 50px;
+}
+
+#active label{ /*стиль отдельного переключателя*/
+	border-radius: 10px; /*скругление углов */
+    border: solid 2px black;
+	display: inline-block; /*расположение в строку*/
+	width: 15px; 
+	height: 15px;
+    /* background: #EF8900; */
+    
+    align-items: flex-start;
+    
+    /* flex-shrink: 0; */
+}
+
+#active{ /*расположение блока с переключателями*/
+	margin: 20% 0 0 0;
+	text-align: center;
+}
+#active label{ /*расстояние между точками карусели*/
+    margin-inline: 10px;
+}
+
+#active label:hover { /*поведение чекбокса при наведении*/
+	background: #FFDCAC;
+	border-color: black !important; /*выполнение в любом случае*/
+}
+
+/*цвет активного лейбла при активации чекбокса*/
+#switch1:checked ~ #active label:nth-child(1),
+#switch2:checked ~ #active label:nth-child(2),
+#switch3:checked ~ #active label:nth-child(3),
+#switch4:checked ~ #active label:nth-child(4){
+	background: black;
+	border-color: black !important;
+    border: black;
+}
+
+#slides .image{ /*анимация пролистывания изображений*/
+	transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+}
+
+#controls label:hover{ /*прозрачность стрелок при наведении*/
+	opacity: 0.6;
+}
+
+#controls label{ /*прозрачность стрелок при отводе курсора*/
+	transition: opacity 0.2s ease-out;
+}
+
+
+/* 3-й блок */
+.block_three{
+    /* position: relative; */
+}
+.background{
+    position: relative;   
+    background: url(../img/video_frame_slow.gif);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    margin: 110px 0 0 0;
+    box-shadow: inset 0 0 74px 20px rgba(0,0,0,0.7);
+    border-radius: 100px;
+
+}
+
+.background p{
+    font-family: 'StolzlBook';
+    font-size: 24px;
+    color: white;
+    padding:140px 804px 107px 140px;
+    z-index:0;
+}
+
+
+/* 4-й блок */
+.bf-inner{
+    display: flex;
+    align-items: center;
+    margin: 100px 0 0 0;
+}
+
+.bf-inner img{
+    margin-right: 50px;
+}
+
+.bf-inner ul{
+    list-style: inside; /*стиль точек листа*/
+    list-style-position: outside;
+    margin: 40px 80px 0 50px;
+    padding: 50px 0 0 0;
+}
+
+.bf-inner ul li{
+    margin-bottom: 35px;    
+}
+
+/* 5-й блок */
+.wrapper_uslugi{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.block_five h3{
+    margin-bottom: 90px;
+}
+.uslugi-inner{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    
+}
+.usluga h4{
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'StolzlRegular';
+
+}
+.usluga-price{
+
+}
+
+.usluga-price p{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    min-width:558px ;     
+    font-family: 'StolzlBook';
+   
+}
+
+.font-light{
+            
+    font-family: 'StolzlLight';
+}
+
+.usluga-price .line{
+    height: 2px;
+    width: 100%;
+    background-color: black;   
+}
+
+/* 6-й блок */
+.block_six{
+    margin-bottom: 370px;
+}
+.block_six h3{
+    margin-bottom: 110px;
+}
+.six__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}    
+.map__inner{
+    width: 50%;
+    position: relative;
+}
+.pin{
+    position: absolute;
+    left: 260px;
+    right: 0;
+    top: 250px;
+    bottom: 0;
+}
+.map{
+    box-shadow: 0px 0px 22px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 80px;
+}
+.contacts{
+    padding: 80px 110px 85px 100px;
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 181, 82, 0.90);
+    width: 690px;
+    height: 670px;
+    flex-shrink: 0;
+    box-shadow: 0px 0px 22px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 80px;
+}
+.contacts h4{
+    font-size: 43px;
+    margin-bottom: 10px;
+    font-family: 'StolzlRegular';
+
+}
+.contacts p{
+    font-size: 28px;
+    font-family: 'StolzlLight';
+    padding-right: 40px;
+}
+.img__inner{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+/* Подвал */
+footer{
+    background-color: #000;
+    font-family: 'StolzlLight';
+    
+   
+}
+footer ul{
+    margin-right: 90px;
+}
+footer li{
+    margin-bottom: 0 !important;
+}
+footer a{
+    color: white !important;
+}
+footer p{
+    color: white;
+}
+footer .header_wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+
+
+
+
+/* 
+ @media(max-width:1550px){
+    .all{
+        background: #FF9200;
+        box-shadow: inset 0 0 74px 20px rgba(0,0,0,0.7);
+        height: 670px;    
+        margin: 120px 2px 100px 0;
+        border-radius: 100px;
+
+   .article img{  размер изображений слайдера
+         width: 100%;
+        width: 495px;
+        height: 450px;
+    }
+    #slides{
+        padding: 50px 119px 0px 0px;
+    }
+}  */

@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOV BOV</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+   <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/formm.css">
+</head>
+<body>
+    
+    <div id="back1"></div>
+
+    <header class="header">
+        <div class="wrapper">
+            <!-- <div class="header_wrapper">
+                <div class="header_logo">
+                    <a href="" class="header_logo-link">
+                        <img src="img/svg/bov_logo.svg" alt="студия звукозаписи в Москве" class="header_logo-pic">
+                    </a>
+                </div> -->
+    
+                <div class="container">
+                    <nav class="navbar navbar-expand-md  ">
+                        
+                        <div class="header_logo-link">
+                            <a href="" class="navbar-brand">
+                                <img src="img/svg/bov_logo.svg" alt="студия звукозаписи в Москве" class="header_logo-pic">
+                            </a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Переключатель навигации">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </div>
+                    
+                        
+                    
+                        <div class="collapse navbar-collapse justify-content-lg-end " id="navbarText">
+                            <ul class="navbar-nav ">
+                                <li class="nav-item  mr-lg-3">
+                                    <a class="nav-link text-black " aria-current="page" href="#" >О нас</a>
+                                </li>
+                                <li class="nav-item mr-3">
+                                    <a class="nav-link text-black" href="#">Правила</a>
+                                </li>
+                                <li class="nav-item mr-3">
+                                    <a class="nav-link text-black" href="#">Услуги</a>
+                                </li>
+                                <li class="nav-item mr-0">
+                                    <a class="nav-link text-black" href="#">Контакты</a>
+                                </li>
+                            </ul>
+                        </div>
+                </div>
+                    
+    
+                    </nav>
+                </div>
+            </div>
+
+
+
+
+            
+            <div class="h1_wrapper">
+                <h1>
+                    Запиши<img src="./img/svg/wave.svg" class="wave" alt="">каждую<span class="note">ноту<img src="./img/svg/slice.svg" class="slice" alt=""></span><br>
+                    Зах<span style="color:#FFDCAC">в</span>ати <span class="magic">в<span style="color:#FFDCAC">о</span>лшебство</span> зв<span style="color:#FFDCAC">у</span>ков
+                </h1>
+               
+                <p>
+                    студия звукозаписи в Москве
+                </p>
+                <!-- Модальное окно -->
+                <!-- Кнопка Записаться -->
+                <a href="#modal_one" class="btn_modal btn">
+                    Записаться
+                </a>
+                
+                <div class="modal" id="modal_one" aria-hidden="true">
+                    <div class="modal_dialog">
+                        <div class="modal_body">
+                            <!-- Форма -->
+                            <div class="modal" id="modal_one" aria-hidden="true">
+                                <div class="modal_content">
+                                   
+                                    <h5 class="form_title">Запись на студию</h5>
+                                    <a href="#" id="close" class="btn_close"><img src="./img/svg/plus.svg"></a>
+                                    <form action="" method="post" id="myForm" >
+                                        <p>Имя <br><span >*обязательно</span></p>
+                                        <input type="text" id="name" name="name"  placeholder="Имя" required>
+                                        <p class="warning">Поле должно содержать русские буквы</p>
+
+                                        <p>Фамилия <br><span >*обязательно</span></p>
+                                        <input type="text" id="surname" name="surname" placeholder="Фамилия" required>
+                                        <p class="warning">Поле должно содержать русские буквы</p>
+
+                                        <p >Дата и время записи <br><span>*обязательно</span></p> 
+                                        <input type="date" required>
+                                        <input type="time" required> 
+                                        
+                                        <p>Номер телефона <br><span >*обязательно</span></p> 
+                                        <input type="phone" id="phone" name="phone" placeholder="+7 (987)-654-32-10" required> 
+                                        <p class="warning">Пример: 79998887766, +79998887766, 89998887766</p>
+
+                                        <p>Почта</p> 
+                                        <input type="email" id="email" name="email" placeholder="example@gmail.com"> 
+                                        <p class="warning">Некорректный формат почты. Пример:example@gmail.com</p>
+                                        <p>Пароль<br><span>*для регистрации личного кабинета (необязательно)</span></p> 
+                                        <input type="password" id="passwordInput" name="password" placeholder="Пароль"> 
+                                        <p class="warning">Пароль должен содержать английсие буквы, <br>от 8 до 20 символов,
+                                             хотя бы одну заглавную букву, специальный символ (#?!@$%^&*-)</p>
+                                        <p>Количество гостей <br>
+                                            <span>*обязательно (не включая Вас)</span></p> 
+                                        <select name="guests" id="guests" required>
+                                            <option value="">-</option>
+                                            <option value="select_0">0</option>
+                                            <option value="select_1">1</option>
+                                            <option value="select_2">2</option>
+                                            <option value="select_3">3</option>
+                                            <option value="select_4">4</option>
+                                            <option value="select_5">5</option>
+                                            <option value="select_6">6</option>
+                                            <option value="select_7">7</option>
+                                            <option value="select_8">8</option>
+                                            <option value="select_9">9</option>
+                                            <option value="select_10">10</option>
+                                        </select>
+                                        
+                                        <p>Комментарий <br><span>*максимальное количество символов - 300</span></p> 
+                                        <textarea class="comments"   maxlength="300" placeholder="Здесь вы можете оставить комментарий"></textarea><br>
+                                        
+                                        <p>Есть ли у вас готовый бит?<br><span>*обязательно</span></p> 
+                                        <fieldset>
+                                            <input id="agree" type="radio" name="agree">
+                                            <label for="agree">Да</label>
+                                            <input id="disagree" type="radio" name="agree">
+                                            <label for="disagree">Нет</label>
+                                        </fieldset>
+
+                                        <p>Загрузка бита<br><span>*если есть</span></p> 
+                                        <input type="file" name="beat" id="beat" accept="/agree.svg">
+                                      
+                                        <div class="checkbox">
+                                            <input type="checkbox" class="checkbox_input" id="checkbox_input">
+                                            <label class="checkbox_label" for="checkbox_input">  Согласен с правилами студии звукозаписи, со сбором и обработкой персональных данных,
+                                                согласен получать информационные сообщения.</label> 
+                                        </div>
+                                        <br>
+                                        <button type="submit" class="btn1" value="Отправить">Записаться</button>   
+                                        
+                                    </form>
+                                    
+                                    
+                                    
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        
+
+        </div>
+        <!-- <div id="back2"></div> -->
+    </header>
+    
+    <!-- <main class="main">
+
+        <div class="wrapper_alt">
+            <h3>В чём мы<span class="h3_rect">хороши</span></h3>
+            <div class="block_one">
+            
+                <div class="img_one">
+                    <img src="./img/stuido_one.png" alt="photo1">
+                </div> 
+                <div class="info_one">
+                    <div class="icon_one">
+                        <img src="./img/svg/dj.svg" alt="icon1">
+                        <p>Харизматичные и оперативные звукорежиссёры
+                        </p>
+                        
+                    </div>
+                    <div class="icon_two">
+                        <img src="./img/svg/microphone.svg" alt="icon2">
+                        <p>Ламповая и
+                            творческая атмосфера
+                        </p>
+                    </div>
+                    <div class="icon_three">
+                        <img src="./img/svg/soundproducer.svg" alt="icon2">
+                        <p>
+                            Качественное и
+                            быстрое cведение в любом стиле
+                        </p>
+                    </div>
+                </div>    
+            </div>
+        </div>
+        
+        <div class="wrapper">
+            <div class="block_two">
+                <h3>Наше<span class="h3_rect">оборудование</span></h3>
+                <section id="slide_back"></section>
+
+
+                <div class="all">
+                    <input checked type="radio" name="respond" id="desktop">
+                        <article>
+                            <input checked type="radio" name="slider" id="switch1">
+                            <input type="radio" name="slider" id="switch2">
+                            <input type="radio" name="slider" id="switch3">
+                            <input type="radio" name="slider" id="switch4">
+
+                            <div id="slides" >
+                                <div id="overflow">
+                                    <div class="image">
+                                        <article>
+                                            <img src="./img/slider/microphon_slide.png" alt="slide_1">
+                                            <div id="slide1">
+                                                <h4>Микрофоны</h4>
+                                                <p>Большой парк микрофонов помогает подобрать уникальное звучание 
+                                                    для каждого проекта.
+                                                    <br><br>
+                                                    Наша коллекция микрофонов:<br>
+                                                    <span>AKG, NEUMANN, GOODFLY, 
+                                                    SOYUZ, SHURE, SENNHEISER. </span>
+                                                </p>
+                                            </div>
+                                        </article>
+                                        <article>
+                                            <img src="./img/slider/plugins_slide.png" alt="slide_2">
+                                            <div id="slide1">
+                                                <h4>Плагины</h4>
+                                                <p>У нас самые свежие и актуальные 
+                                                    программы для создания полноценных проектов:<br>
+                                                    <span>
+                                                        Ableton, FL Studio 21, WAVESAVID, SSL, FabFilter, 
+                                                        Izotope, OekSound, Celemony, Plugin Alliance, Soundtoys, 
+                                                        CableGuys, SIR Audio Tools, Acustica Audio, ValhallaDSP
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </article>
+                                        <article>
+                                            <img src="./img/slider/studio_slide.png" alt="slide_3">
+                                            <div id="slide1">
+                                                <h4>Мониторы</h4>
+                                                <p>Студия с уникальной контрольной комнатой в которой установлена 
+                                                    эксклюзивная мониторная акустическая система 
+                                                    дальнего поля <span>AUGSPURGER.</span> <br><br>
+                                                    В студии также установлена мониторная линия среднего поля <span>FOCAL</span>
+                                                     и мониторные линии ближнего поля <span>YAMAHA</span> и <span>AVANTONE</span> .
+                                                </p>
+                                            </div>
+                                        </article>
+                                        <article>
+                                            <img src="./img/slider/headphones.png" alt="slide_4">
+                                            <div id="slide1">
+                                                <h4>Наушники</h4>
+                                                <p>
+                                                    Студийные наушники нужны для коммерческого использования, 
+                                                    чтобы обеспечить высокое качество звука и точность воспроизведения звуковых материалов. <br> <br>
+                                                    В нашей студии используем наушники от таких брендов, как <span>Audio Technica, SONY, Sennheiser,
+                                                    Beyerdynamic, AKG</span>.
+
+
+                                                </p>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>  
+
+                            <div id="controls">
+                                <label for="switch1"></label>
+                                <label for="switch2"></label>
+                                <label for="switch3"></label>
+                                <label for="switch4"></label>
+                            </div>     
+
+                            <div id="active">
+                                <label for="switch1"></label>
+                                <label for="switch2"></label>
+                                <label for="switch3"></label>
+                                <label for="switch4"></label>
+                            </div>             
+                        </article>
+
+                </div>
+                
+            </div>
+
+            <div class="block_three">
+                <h3>Самая <span class="h3_rect"> идеальная </span> студия?</h3>
+                <div class="background">
+                    <div class="inner">
+                        <p>Мы делаем настолько крутые проекты, которые создают 
+                            “wow”- эффект. Именно поэтому мы решили назвать нашу студию Воу Воу.
+                            <br> <br>
+                            Мы очень любим капибар 
+                            и апельсины. Это идеальная гармония, на которой построена наша команда.
+                            <br> <br>
+                            С нами работают известные артисты разных жанров и стилей, большинство совместных проектов попадало в чарты.
+                        </p>
+                        
+                    
+                    </div>
+                </div>
+            </div>
+
+            <div class="block_four">
+                
+                <h3><span class="h3_rect">Правила</span> посещения студии</h3>
+                <div class="bf-inner">   
+                    <img src="./img/rules.png" alt="Rules">
+                    <ul>
+                        <li>При посещении студии приходите
+                        с людьми, непосредственно относящимися к работе, рабочий процесс будет проходить намного продуктивней! Количество гостей уточняйте у менеджера. 
+                        </li>
+                        <li>Бронирование по предоплате. Перенос, отмена записи осуществляется за 24 часа, иначе предоплата сгорает.</li>
+                        <li>Алкоголь и наркотики на студии запрещены.</li>
+                        <li>Приходите подготовленным (бит вы можете скинуть заранее в диалог с группой или на почту: bovbov@gmail.com)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="wrapper_uslugi">
+                <div class="block_five">
+                    
+                    <h3>Услуги</h3>
+                    <div class="uslugi-inner">
+                        <div class="usluga">
+                            <h4>Запись</h4>
+
+                            <div class="usluga-price">
+                                <p>Запись в будний день <span>2000</span></p>
+                                <div class="line"></div>
+                                <p><span class="font-light">1 час</span></p>
+                            </div>
+                            <div class="usluga-price">
+                                <p>Запись в будний день <span>2000</span></p>
+                                <div class="line"></div>
+                                <p><span class="font-light">1 час</span></p>
+                            </div>
+                        </div>
+                        
+                        <div class="usluga">
+                            <h4>Сведение</h4>
+
+                            <div class="usluga-price">
+                                <p>Сведение <span>от 5000</span></p>
+                            <div class="line"></div>
+                                
+                            </div>
+                            <div class="usluga-price">
+                                <p>Сведение инструментов <span>от 6500</span></p>
+                                <div class="line"></div>
+                            </div>
+                            <div class="usluga-price">
+                                <p>Работа при Вас<span>+1000 за час</span></p>
+                                <div class="line"></div>
+                            </div>
+                            <div class="usluga-price">
+                                <p>Дистрибуция <span>1500</span></p>
+                                <div class="line"></div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="uslugi-inner">
+                        <div class="usluga">
+                            <h4>Дизайн</h4>
+
+                            <div class="usluga-price mb">
+                                <p>Обложка<span>от 1500</span></p>
+                                <div class="line"></div>
+                            </div>
+                            <div class="usluga-price">
+                                <p>Анимированная обложка<span>от 2000</span></p>
+                                <div class="line"></div>
+                            </div>
+                            <div class="usluga-price">
+                                <p>Рисованная обложка<span>от 2000</span></p>
+                                <div class="line"></div>
+                            </div>
+                            <div class="usluga-price">
+                                <p>Видео для Tik Tok/Shorts<span>от 1500</span></p>
+                                <div class="line"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="usluga">
+                            <h4>Аренда</h4>
+
+                            <div class="usluga-price">
+                                <p>Аренда студии в будние дни<span>от 1500</span></p>
+                            <div class="line"></div>
+                                
+                            </div>
+                            <div class="usluga-price">
+                                <p>Аренда студии в выходной<span>от 2000</span></p>
+                                <div class="line"></div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="uslugi-inner">
+                        <div class="usluga">
+                            <h4>Подкасты</h4>
+
+                            <div class="usluga-price">
+                                <p>Час записи в будний день<span>от 2000</span></p>
+                                <div class="line"></div>
+                            </div>
+                            <div class="usluga-price">
+                                <p>Час записи в выходной день<span>от 2500</span></p>
+                                <div class="line"></div>
+                            </div>
+                            <div class="usluga-price">
+                                <p>Запись в будний день<span>2700</span></p>
+                                <div class="line"></div>
+                                <p><span  class="font-light">С видеосветом</span></p>
+                            </div>
+                            <div class="usluga-price">
+                                <p>Запись в выходные<span>3000</span></p>
+                                <div class="line"></div>
+                                <p><span class="font-light">С видеосветом</span></p>
+                            </div>
+                        </div>
+                        
+                        <div class="usluga">
+                            <h4>Съемка</h4>
+
+                            <div class="usluga-price">
+                                <p>Съемки подкаста<span>от 8100</span></p>
+                                <div class="line"></div>
+                                <p><span class="font-light">1 час записи</span></p>
+                            </div>
+                            <div class="usluga-price">
+                                <p>Аренда студии в выходной<span>от 5000</span></p>
+                                <div class="line"></div>
+                                <p><span class="font-light">С видеосветом</span></p>
+                            </div>
+                            <div class="usluga-price">
+                                <p>Фотосессия<span>от 4000</span></p>
+                                <div class="line"></div>
+                            </div>
+                        </div>
+                        
+                    </div>
+        
+        
+                </div>
+            </div>
+     
+            <div class="block_six"> 
+                <h3>Контакты</h3>
+                <div class="six__inner">
+                    <div class="map__inner">
+                        <img class="pin" src="./img/svg/map-pin.svg" alt="#">
+                        <img class="map" src="./img/map.png" alt="">
+                    </div>
+                    <div class="contacts">
+                        <h4>Адрес:</h4>
+                        <p >г. Москва, Малая Калужская,
+                            д. 1, студия 7113</p>
+                        <div class="img__inner">
+                            <img src="./img/svg/vk-logo.svg" alt="#">
+                            <img src="./img/svg/telegram_logo.svg" alt="#">
+                            <img src="./img/svg/instagram_logo.svg" alt="#">
+                        </div>
+                        <h4>Тел.:</h4>
+                        <p style="margin-bottom: 50px;">+7 987 654 32 10</p>
+                        <h4>Почта</h4>
+                        <p>bovbov@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </div>
+    </main>
+    <footer>
+        <div class="wrapper">
+            <div class="header_wrapper">
+                <div class="header_logo">
+                    <a href="" class="header_logo-link">
+                        <img src="img/svg/bov_logo_white.svg" alt="студия звукозаписи в Москве" class="header_logo-pic">
+                    </a>
+                </div>
+    
+                <nav class="header_nav">
+                    <ul class="header_list">
+                        <li class="header_item">
+                            <a href="#1" class="header_link">О нас</a>
+                        </li>
+                        <li class="header_item">
+                            <a href="#1" class="header_link">Правила</a>
+                        </li>
+                        <li class="header_item">
+                            <a href="#1" class="header_link">Услуги</a>
+                        </li>
+                        <li class="header_item">
+                            <a href="#1" class="header_link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <p>2023 © bovbov.ru</p>
+            </div>
+        </div>
+    </footer> -->
+
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+
+
+
+</html>
+
+

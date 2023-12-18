@@ -1,0 +1,25 @@
+@media (max-width:900px){
+    #back1{
+        width: 100%;
+    }
+}
+
+@media (max-width:720px) {
+    #back1{
+        width: 100%;
+    }
+  
+
+   
+
+    .nav-item{
+        margin-right: 42px;
+        margin-bottom: 38px;
+    }
+}
+
+@media (max-width:540px){
+    #back1{
+        width: 100%;
+    }
+}
