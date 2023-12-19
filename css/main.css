@@ -1,20 +1,17 @@
-@media (max-width:900px){
+@media (max-width:1024px){
     #back1{
         width: 100%;
     }
 }
 
-@media (max-width:720px) {
+@media (max-width:768px) {
     #back1{
         width: 100%;
     }
-  
 
-   
-
-    .nav-item{
-        margin-right: 42px;
-        margin-bottom: 38px;
+    body .nav-block{
+        display: flex;
+        justify-content: space-between;
     }
 }
 

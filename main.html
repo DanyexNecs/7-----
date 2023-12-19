@@ -12,7 +12,7 @@
 </head>
 <body>
     
-    <div id="back1"></div>
+ 
 
     <header class="header">
         <div class="wrapper">
@@ -22,146 +22,152 @@
                         <img src="img/svg/bov_logo.svg" alt="студия звукозаписи в Москве" class="header_logo-pic">
                     </a>
                 </div> -->
-    
-                <div class="container">
-                    <nav class="navbar navbar-expand-md  ">
-                        
-                        <div class="header_logo-link">
+                <div id="back1"></div>
+                
+                    <nav class="navbar navbar-expand-md" style="padding: 1rem;">
+                        <div class="container-fluid justify-content-between ">
+                           
                             <a href="" class="navbar-brand">
                                 <img src="img/svg/bov_logo.svg" alt="студия звукозаписи в Москве" class="header_logo-pic">
                             </a>
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Переключатель навигации">
+                            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Переключатель навигации">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
-                        </div>
-                    
+                           
                         
-                    
-                        <div class="collapse navbar-collapse justify-content-lg-end " id="navbarText">
-                            <ul class="navbar-nav ">
-                                <li class="nav-item  mr-lg-3">
-                                    <a class="nav-link text-black " aria-current="page" href="#" >О нас</a>
-                                </li>
-                                <li class="nav-item mr-3">
-                                    <a class="nav-link text-black" href="#">Правила</a>
-                                </li>
-                                <li class="nav-item mr-3">
-                                    <a class="nav-link text-black" href="#">Услуги</a>
-                                </li>
-                                <li class="nav-item mr-0">
-                                    <a class="nav-link text-black" href="#">Контакты</a>
-                                </li>
-                            </ul>
+                            
+                            
+                            <div class="collapse navbar-collapse justify-content-end " id="navbarText">
+                                <ul class="navbar-nav ">
+                                    <li class="nav-item  me-lg-3">
+                                        <a class="nav-link text-black " aria-current="page" href="#" >О нас</a>
+                                    </li>
+                                    <li class="nav-item me-3">
+                                        <a class="nav-link text-black" href="#">Правила</a>
+                                    </li>
+                                    <li class="nav-item me-3">
+                                        <a class="nav-link text-black" href="#">Услуги</a>
+                                    </li>
+                                    <li class="nav-item me-5">
+                                        <a class="nav-link text-black" href="#">Контакты</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                </div>
                     
     
                     </nav>
+                    
+                  
                 </div>
             </div>
 
 
+            <div class="modal" id="modal_one" aria-hidden="true">
+                <div class="modal_dialog">
+                    <div class="modal_body">
+                        <!-- Форма -->
+                        <div class="modal" id="modal_one" aria-hidden="true">
+                            <div class="modal_content">
+                               
+                                <h5 class="form_title">Запись на студию</h5>
+                                <a href="#" id="close" class="btn_close"><img src="./img/svg/plus.svg"></a>
+                                <form action="" method="post" id="myForm" >
+                                    <p>Имя <br><span >*обязательно</span></p>
+                                    <input type="text" id="name" name="name"  placeholder="Имя" required>
+                                    <p class="warning">Поле должно содержать русские буквы</p>
 
+                                    <p>Фамилия <br><span >*обязательно</span></p>
+                                    <input type="text" id="surname" name="surname" placeholder="Фамилия" required>
+                                    <p class="warning">Поле должно содержать русские буквы</p>
 
-            
-            <div class="h1_wrapper">
-                <h1>
-                    Запиши<img src="./img/svg/wave.svg" class="wave" alt="">каждую<span class="note">ноту<img src="./img/svg/slice.svg" class="slice" alt=""></span><br>
-                    Зах<span style="color:#FFDCAC">в</span>ати <span class="magic">в<span style="color:#FFDCAC">о</span>лшебство</span> зв<span style="color:#FFDCAC">у</span>ков
-                </h1>
-               
-                <p>
-                    студия звукозаписи в Москве
-                </p>
-                <!-- Модальное окно -->
-                <!-- Кнопка Записаться -->
-                <a href="#modal_one" class="btn_modal btn">
-                    Записаться
-                </a>
-                
-                <div class="modal" id="modal_one" aria-hidden="true">
-                    <div class="modal_dialog">
-                        <div class="modal_body">
-                            <!-- Форма -->
-                            <div class="modal" id="modal_one" aria-hidden="true">
-                                <div class="modal_content">
-                                   
-                                    <h5 class="form_title">Запись на студию</h5>
-                                    <a href="#" id="close" class="btn_close"><img src="./img/svg/plus.svg"></a>
-                                    <form action="" method="post" id="myForm" >
-                                        <p>Имя <br><span >*обязательно</span></p>
-                                        <input type="text" id="name" name="name"  placeholder="Имя" required>
-                                        <p class="warning">Поле должно содержать русские буквы</p>
-
-                                        <p>Фамилия <br><span >*обязательно</span></p>
-                                        <input type="text" id="surname" name="surname" placeholder="Фамилия" required>
-                                        <p class="warning">Поле должно содержать русские буквы</p>
-
-                                        <p >Дата и время записи <br><span>*обязательно</span></p> 
-                                        <input type="date" required>
-                                        <input type="time" required> 
-                                        
-                                        <p>Номер телефона <br><span >*обязательно</span></p> 
-                                        <input type="phone" id="phone" name="phone" placeholder="+7 (987)-654-32-10" required> 
-                                        <p class="warning">Пример: 79998887766, +79998887766, 89998887766</p>
-
-                                        <p>Почта</p> 
-                                        <input type="email" id="email" name="email" placeholder="example@gmail.com"> 
-                                        <p class="warning">Некорректный формат почты. Пример:example@gmail.com</p>
-                                        <p>Пароль<br><span>*для регистрации личного кабинета (необязательно)</span></p> 
-                                        <input type="password" id="passwordInput" name="password" placeholder="Пароль"> 
-                                        <p class="warning">Пароль должен содержать английсие буквы, <br>от 8 до 20 символов,
-                                             хотя бы одну заглавную букву, специальный символ (#?!@$%^&*-)</p>
-                                        <p>Количество гостей <br>
-                                            <span>*обязательно (не включая Вас)</span></p> 
-                                        <select name="guests" id="guests" required>
-                                            <option value="">-</option>
-                                            <option value="select_0">0</option>
-                                            <option value="select_1">1</option>
-                                            <option value="select_2">2</option>
-                                            <option value="select_3">3</option>
-                                            <option value="select_4">4</option>
-                                            <option value="select_5">5</option>
-                                            <option value="select_6">6</option>
-                                            <option value="select_7">7</option>
-                                            <option value="select_8">8</option>
-                                            <option value="select_9">9</option>
-                                            <option value="select_10">10</option>
-                                        </select>
-                                        
-                                        <p>Комментарий <br><span>*максимальное количество символов - 300</span></p> 
-                                        <textarea class="comments"   maxlength="300" placeholder="Здесь вы можете оставить комментарий"></textarea><br>
-                                        
-                                        <p>Есть ли у вас готовый бит?<br><span>*обязательно</span></p> 
-                                        <fieldset>
-                                            <input id="agree" type="radio" name="agree">
-                                            <label for="agree">Да</label>
-                                            <input id="disagree" type="radio" name="agree">
-                                            <label for="disagree">Нет</label>
-                                        </fieldset>
-
-                                        <p>Загрузка бита<br><span>*если есть</span></p> 
-                                        <input type="file" name="beat" id="beat" accept="/agree.svg">
-                                      
-                                        <div class="checkbox">
-                                            <input type="checkbox" class="checkbox_input" id="checkbox_input">
-                                            <label class="checkbox_label" for="checkbox_input">  Согласен с правилами студии звукозаписи, со сбором и обработкой персональных данных,
-                                                согласен получать информационные сообщения.</label> 
-                                        </div>
-                                        <br>
-                                        <button type="submit" class="btn1" value="Отправить">Записаться</button>   
-                                        
-                                    </form>
+                                    <p >Дата и время записи <br><span>*обязательно</span></p> 
+                                    <input type="date" required>
+                                    <input type="time" required> 
                                     
+                                    <p>Номер телефона <br><span >*обязательно</span></p> 
+                                    <input type="phone" id="phone" name="phone" placeholder="+7 (987)-654-32-10" required> 
+                                    <p class="warning">Пример: 79998887766, +79998887766, 89998887766</p>
+
+                                    <p>Почта</p> 
+                                    <input type="email" id="email" name="email" placeholder="example@gmail.com"> 
+                                    <p class="warning">Некорректный формат почты. Пример:example@gmail.com</p>
+                                    <p>Пароль<br><span>*для регистрации личного кабинета (необязательно)</span></p> 
+                                    <input type="password" id="passwordInput" name="password" placeholder="Пароль"> 
+                                    <p class="warning">Пароль должен содержать английсие буквы, <br>от 8 до 20 символов,
+                                         хотя бы одну заглавную букву, специальный символ (#?!@$%^&*-)</p>
+                                    <p>Количество гостей <br>
+                                        <span>*обязательно (не включая Вас)</span></p> 
+                                    <select name="guests" id="guests" required>
+                                        <option value="">-</option>
+                                        <option value="select_0">0</option>
+                                        <option value="select_1">1</option>
+                                        <option value="select_2">2</option>
+                                        <option value="select_3">3</option>
+                                        <option value="select_4">4</option>
+                                        <option value="select_5">5</option>
+                                        <option value="select_6">6</option>
+                                        <option value="select_7">7</option>
+                                        <option value="select_8">8</option>
+                                        <option value="select_9">9</option>
+                                        <option value="select_10">10</option>
+                                    </select>
                                     
+                                    <p>Комментарий <br><span>*максимальное количество символов - 300</span></p> 
+                                    <textarea class="comments"   maxlength="300" placeholder="Здесь вы можете оставить комментарий"></textarea><br>
                                     
-                                </div>  
-                            </div>
+                                    <p>Есть ли у вас готовый бит?<br><span>*обязательно</span></p> 
+                                    <fieldset>
+                                        <input id="agree" type="radio" name="agree">
+                                        <label for="agree">Да</label>
+                                        <input id="disagree" type="radio" name="agree">
+                                        <label for="disagree">Нет</label>
+                                    </fieldset>
+
+                                    <p>Загрузка бита<br><span>*если есть</span></p> 
+                                    <input type="file" name="beat" id="beat" accept="/agree.svg">
+                                  
+                                    <div class="checkbox">
+                                        <input type="checkbox" class="checkbox_input" id="checkbox_input">
+                                        <label class="checkbox_label" for="checkbox_input">  Согласен с правилами студии звукозаписи, со сбором и обработкой персональных данных,
+                                            согласен получать информационные сообщения.</label> 
+                                    </div>
+                                    <br>
+                                    <button type="submit" class="btn1" value="Отправить">Записаться</button>   
+                                    
+                                </form>
+                                
+                                
+                                
+                            </div>  
                         </div>
                     </div>
                 </div>
-                
             </div>
+
+            
+           
+                <div class="h1_wrapper">
+                    <div class="container"></div>
+                    <h1>
+                        Запиши<img src="./img/svg/wave.svg" class="wave" alt="">каждую<span class="note">ноту<img src="./img/svg/slice.svg" class="slice" alt=""></span><br>
+                        Зах<span style="color:#FFDCAC">в</span>ати <span class="magic">в<span style="color:#FFDCAC">о</span>лшебство</span> зв<span style="color:#FFDCAC">у</span>ков
+                    </h1>
+                   
+                    <p>
+                        студия звукозаписи в Москве
+                    </p>
+                    <!-- Модальное окно -->
+                    <!-- Кнопка Записаться -->
+                    <a href="#modal_one" class="btn_modal btn">
+                        Записаться
+                    </a>
+                    
+                </div>
+           </div>
+
+
+            
         </div>
 
         
